@@ -1,0 +1,341 @@
+body,
+html {
+  
+  margin: 0;
+  height: 100%;
+  color: rgb(0, 0, 0);
+  font-size: 28px;
+  font-weight: 500;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.img {
+  background-image: url(assets/fondo-escritorio.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100%;
+  filter: brightness(70%);
+  filter: blur(2px);
+}
+
+#logo-cont {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 375px;
+  height: 380px;
+}
+
+.griffyndor {
+  width: initial;
+  height: initial;
+  position: absolute;
+  left: 20px;
+  top: 0px;
+}
+
+.griffyndor:hover {
+  transition-duration: 0.8s;
+  top: -25px;
+  left: -10px;
+  transform: scale(1.2);
+}
+
+.slytherin {
+  width: initial;
+  height: initial;
+  position: absolute;
+  left: 190px;
+  top: 0px;
+}
+
+.slytherin:hover {
+  transition-duration: 0.8s;
+  top: -25px;
+  left: 215px;
+  transform: scale(1.2);
+}
+
+.hufflepuff {
+  width: initial;
+  height: initial;
+  position: absolute;
+  top: 190px;
+  left: 0px;
+}
+
+.hufflepuff:hover {
+  transition-duration: 0.8s;
+  top: 215px;
+  left: -25px;
+  transform: scale(1.2);
+}
+
+.ravenclaw {
+  width: initial;
+  height: initial;
+  position: absolute;
+  left: 190px;
+  top: 190px;
+}
+
+.ravenclaw:hover {
+  transition-duration: 0.8s;
+  top: 215px;
+  left: 215px;
+  transform: scale(1.2);
+}
+
+p {
+  margin: 5px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.magos {
+  float: right;
+  margin: 25px;
+}
+
+.menu-principal {
+  width: 40px;
+  height: 40px;
+  animation-name: inicio;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.menu-principal:hover {
+  transform: scale(1.2);
+}
+
+div div img {
+  width: 200px;
+  height: 300px;
+}
+
+/* ACA TERMINA EL CONTENIDO GENERAL */
+
+.index2 {
+  background-image: url(assets/img-fondo/fondo-gryffindor.jpg);
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.index3 {
+  background-image: url(assets/img-fondo/fondo-slytherin.jpg);
+  position: absolute;
+  top: 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.index4 {
+  background-image: url(assets/img-fondo/fondo_hufflepuff.jpg);
+  position: absolute;
+  top: 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.index5 {
+  background-image: url(assets/img-fondo/fondo-ravenclaw.jpg);
+  position: absolute;
+  top: 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.cont2 {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 75%;
+  height: 100%;
+  background: rgb(155, 7, 7);
+  border: 10px double;
+}
+
+.cont3 {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 75%;
+  height: 100%;
+  background: rgb(7, 155, 39);
+  border: 10px double;
+}
+
+.cont4 {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 75%;
+  height: 100%;
+  background: rgb(179, 176, 12);
+  border: 10px double;
+}
+
+.cont5 {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 75%;
+  height: 100%;
+  background: rgb(7, 88, 155);
+  border: 10px double;
+}
+
+#godric-tittle {
+  margin-top: 0px;
+  width: 100%;
+  background: rgb(209, 14, 14);
+  position: sticky;
+  top: 0%;
+}
+
+#salazar-tittle {
+  margin-top: 0px;
+  width: 100%;
+  background: rgb(12, 117, 21);
+  position: sticky;
+  top: 0%;
+}
+
+#helga-tittle {
+  margin-top: 0px;
+  width: 100%;
+  background: rgb(251, 255, 0);
+  position: sticky;
+  top: 0%;
+}
+
+#rowena-tittle {
+  margin-top: 0px;
+  width: 100%;
+  background: rgb(25, 48, 124);
+  position: sticky;
+  top: 0;
+}
+
+footer {
+  font-size: 18px;
+  color: whitesmoke;
+  position: absolute;
+  bottom: 2%;
+  left: 2%;
+}
+
+.contacto {
+  position: fixed;
+  bottom: 0%;
+}
+
+/*Comienzo Responsive*/
+
+@media screen and (max-width:800px){
+  .img {
+    background-image: url(assets/fondo-celular.jpg);
+    filter: none;
+  }
+
+  #logo-cont div a img {
+    width: 60px;
+    height: 60px;
+  }
+
+  #logo-cont {
+    background-position: center;
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+  }
+
+  .griffyndor {
+    top: 40px;
+    left: 38px;
+  }
+
+  .griffyndor:hover {
+    top: 40px;
+    left: 38px;
+  }
+  .slytherin {
+    top: 40px;
+    left: 105px;
+  }
+  .slytherin:hover {
+    top: 40px;
+    left: 105px;
+  }
+
+  .hufflepuff {
+    top: 105px;
+    left: 38px;
+  }
+
+  .hufflepuff:hover {
+    left: 38px;
+    top: 105px;
+  }
+
+  .ravenclaw {
+    top: 105px;
+    left: 105px;
+  }
+
+  .ravenclaw:hover {
+    top: 105px;
+    left: 105px;
+  }
+
+  .gshr {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h1 a img {
+    float: right;
+    margin: 5px;
+  }
+
+  @keyframes inicio {
+    100% {
+      margin-right: 20px;
+      width: 55px;
+      height: 55px;
+    }
+  }
+
+  footer img {
+    width: 20px;
+    height: 20px;
+  }
+
+  footer {
+    position: relative;
+    font-size: 15px;
+    top: -8%;
+    width: 40%;
+  }
+
+  .contacto {
+    display: none;
+  }
+}
